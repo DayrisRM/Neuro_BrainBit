@@ -14,7 +14,9 @@ namespace Neuro_BrainBit
         public MindData LastMindData { get; set; }
 
         private EegEmotionalMath _math;
-        private bool _isCalibrated;
+        public bool _isCalibrated { get; set; }
+
+        public bool isLogActive { get; set; }
 
         public EmotionBipolar()
         {
@@ -94,8 +96,10 @@ namespace Neuro_BrainBit
             RawChannels[] bipolars = new RawChannels[data.Length];
             for (var i = 0; i < data.Length; i++)
             {
-                bipolars[i].LeftBipolar = data[i].T3 - data[i].O1;
-                bipolars[i].RightBipolar = data[i].T4 - data[i].O2;
+                // bipolars[i].LeftBipolar = data[i].T3 - data[i].O1;
+                // bipolars[i].RightBipolar = data[i].T4 - data[i].O2;
+               bipolars[i].LeftBipolar = data[i].T3; // es el C3
+               bipolars[i].RightBipolar = data[i].T4;//es el C4
             }
 
             _math.PushData(bipolars);
@@ -112,7 +116,9 @@ namespace Neuro_BrainBit
                 ResolveSpectralData();
                 ResolveRawSpectralData();
                 ResolveMindData();
-                PrintValues();
+
+                if (isLogActive)
+                    PrintValues();
             }
         }
 
@@ -126,7 +132,8 @@ namespace Neuro_BrainBit
             bool isBothSideArtifacted = _math.IsBothSidesArtifacted();
             IsBothSidesArtifacted = isBothSideArtifacted;
 
-            Console.WriteLine($"isArtifactedSequence: {isArtifactedSequence} - isBothSideArtifacted:{isBothSideArtifacted}");
+            if(isLogActive)
+                Console.WriteLine($"isArtifactedSequence: {isArtifactedSequence} - isBothSideArtifacted:{isBothSideArtifacted}");
 
         }
 
@@ -137,15 +144,17 @@ namespace Neuro_BrainBit
             {
                 double progress = _math.GetCallibrationPercents();
                 ProgressCalibration = progress;
-                Console.WriteLine($"calibration progress: {progress}");
+                if (isLogActive)
+                    Console.WriteLine($"calibration progress: {progress}");
             }
             else
             {
-                Console.WriteLine("It's calibrated!");
+                if (isLogActive)
+                    Console.WriteLine("It's calibrated!");
             }
         }
 
-        private void ResolveSpectralData()
+        public void ResolveSpectralData()
         {
             var spectralValues = _math.ReadSpectralDataPercentsArr(); //spectral data Percents
             if (spectralValues is not null && spectralValues.Length > 0)
@@ -155,13 +164,13 @@ namespace Neuro_BrainBit
             }
         }
 
-        private void ResolveRawSpectralData()
+        public void ResolveRawSpectralData()
         {
             var rawSpectralValues = _math.ReadRawSpectralVals(); //alpha and beta
             RawSpectralData = rawSpectralValues;
         }
 
-        private void ResolveMindData()
+        public void ResolveMindData()
         {
             var mentalValues = _math.ReadMentalDataArr();  //attention, relaxation
             if (mentalValues is not null && mentalValues.Length > 0)

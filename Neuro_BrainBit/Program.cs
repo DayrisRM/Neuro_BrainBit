@@ -96,6 +96,12 @@ void ExecuteCommand(string command, string parameter)
         case "emotion-stop":
             StopEmotion();
             break;
+        case "nf-start":
+            StartNeurofeedbackService();
+            break;
+        case "nf-stop":
+            StopNeurofeedbackService();
+            break;
         default:
             ConsoleHelper.WriteLine(2, "Please insert a correct option", ConsoleColor.Red);
             break;
@@ -216,6 +222,16 @@ bool CheckConnection()
     return true;
 }
 
+void StartNeurofeedbackService()
+{
+    BrainBitHelper.StartEmotionBipolar(sensor);
+    BrainBitHelper.StartNFService();
+}
+
+void StopNeurofeedbackService()
+{
+    BrainBitHelper.StopNFService();
+}
 
 
 Console.WriteLine("-----------------");

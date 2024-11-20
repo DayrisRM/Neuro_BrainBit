@@ -36,7 +36,9 @@ namespace Neuro_BrainBit
                 { "connection-state-end", new Command("connection-state-end", "Unsubscribe to connection state event.") },                
                 { "start-signal-print", new Command("start-signal-print <seconds>", "Print the signal values for <seconds>.") },
                 { "emotion-start", new Command("emotion-start <seconds>", "Start the emotion library. It is active for <seconds>.") },
-                { "emotion-stopt", new Command("emotion-stop", "Stop the emotion library.") }
+                { "emotion-stop", new Command("emotion-stop", "Stop the emotion library.") },
+                { "nf-start", new Command("nf-start", "Start the Neurofeedback service.") },
+                { "nf-stop", new Command("nf-stop", "Stop the Neurofeedback service.") }
             };
 
             return commands;

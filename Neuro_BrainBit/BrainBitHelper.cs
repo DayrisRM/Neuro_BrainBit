@@ -5,6 +5,7 @@ namespace Neuro_BrainBit
     public static class BrainBitHelper
     {
         static EmotionBipolar emotionBi = new EmotionBipolar();
+        static NeurofeedbackService NFService = new NeurofeedbackService(emotionBi);
 
         public static Scanner CreateScanner() 
         {
@@ -130,6 +131,7 @@ namespace Neuro_BrainBit
 
         public static void StartEmotionBipolar(BrainBitSensor sensor, int seconds = 10)
         {
+            emotionBi.isLogActive = true;
             sensor.EventBrainBitSignalDataRecived += emotionBi.EmotionProcessData;            
             StartSignal(sensor);
             emotionBi.StartCalibration();
@@ -139,6 +141,13 @@ namespace Neuro_BrainBit
             StopEmotionBipolar(sensor);
         }
 
+        public static void StartEmotionBipolar(BrainBitSensor sensor)
+        {
+            sensor.EventBrainBitSignalDataRecived += emotionBi.EmotionProcessData;
+            StartSignal(sensor);
+            emotionBi.StartCalibration();            
+        }
+
         public static void StopEmotionBipolar(BrainBitSensor sensor)
         {
             sensor.EventBrainBitSignalDataRecived -= emotionBi.EmotionProcessData;
@@ -146,6 +155,19 @@ namespace Neuro_BrainBit
             emotionBi.Finish();
             Console.WriteLine("StopEmotionBipolar");
         }
+
+        public static void StartNFService() 
+        {
+            Console.WriteLine("Starting NF service...");            
+            NFService.Start();
+        }
+
+        public static void StopNFService()
+        {
+            Console.WriteLine("Stoping NF service...");
+            NFService.Stop();
+        }
+
 
 
         //BrainBit events
@@ -161,7 +183,7 @@ namespace Neuro_BrainBit
         static void Sensor_EventBrainBitResistDataRecived(ISensor sensor, BrainBitResistData data)
         {
            // Console.WriteLine($"O1: {data.O1 * 1e3} O2: {data.O2 * 1e3} T3: {data.T3 * 1e3} T4: {data.T4 * 1e3}");
-            Console.WriteLine($"O1: {data.O1} O2: {data.O2} T3: {data.T3} T4: {data.T4}");
+            Console.WriteLine($"1: {data.O1} 2: {data.O2} 3: {data.T3} 4: {data.T4}");
             Console.WriteLine("-");
         }
 

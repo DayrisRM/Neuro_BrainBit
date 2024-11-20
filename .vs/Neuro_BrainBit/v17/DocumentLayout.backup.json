@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|c:\\users\\dayri\\documents\\neurotb\\project\\neuro_brainbit\\neuro_brainbit\\neuro_brainbit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|solutionrelative:neuro_brainbit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|c:\\users\\dayri\\documents\\neurotb\\project\\neuro_brainbit\\neuro_brainbit\\neuro_brainbit\\neurofeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|solutionrelative:neuro_brainbit\\neurofeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|c:\\users\\dayri\\documents\\neurotb\\project\\neuro_brainbit\\neuro_brainbit\\neuro_brainbit\\neurofeedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|solutionrelative:neuro_brainbit\\neurofeedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|c:\\users\\dayri\\documents\\neurotb\\project\\neuro_brainbit\\neuro_brainbit\\neuro_brainbit\\brainbithelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C8CEB73-91F3-4563-B1B1-6460D86DE5F0}|Neuro_BrainBit\\Neuro_BrainBit.csproj|solutionrelative:neuro_brainbit\\brainbithelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NeurofeedbackService.cs",
+              "DocumentMoniker": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\NeurofeedbackService.cs",
+              "RelativeDocumentMoniker": "Neuro_BrainBit\\NeurofeedbackService.cs",
+              "ToolTip": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\NeurofeedbackService.cs",
+              "RelativeToolTip": "Neuro_BrainBit\\NeurofeedbackService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAkwGIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:35:42.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NeurofeedbackDto.cs",
+              "DocumentMoniker": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\NeurofeedbackDto.cs",
+              "RelativeDocumentMoniker": "Neuro_BrainBit\\NeurofeedbackDto.cs",
+              "ToolTip": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\NeurofeedbackDto.cs",
+              "RelativeToolTip": "Neuro_BrainBit\\NeurofeedbackDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:35:35.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\Program.cs",
+              "RelativeDocumentMoniker": "Neuro_BrainBit\\Program.cs",
+              "ToolTip": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\Program.cs",
+              "RelativeToolTip": "Neuro_BrainBit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T14:17:57.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BrainBitHelper.cs",
+              "DocumentMoniker": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\BrainBitHelper.cs",
+              "RelativeDocumentMoniker": "Neuro_BrainBit\\BrainBitHelper.cs",
+              "ToolTip": "C:\\Users\\dayri\\Documents\\NeuroTB\\Project\\Neuro_BrainBit\\Neuro_BrainBit\\Neuro_BrainBit\\BrainBitHelper.cs",
+              "RelativeToolTip": "Neuro_BrainBit\\BrainBitHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:19:00.711Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
